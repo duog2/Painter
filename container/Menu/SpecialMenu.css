@@ -1,0 +1,67 @@
+.app__specialMenu {
+    flex-direction: column;
+    background: var(--color-black);
+}
+
+.app__specialMenu-title {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.app__specialMenu-menu {
+    width: 100%;
+    margin: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.app__specialMenu-menu_heading {
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+    white-space: nowrap; /* Prevents the text from breaking into a new line */
+}
+
+.app__specialMenu-menu_wine,
+.app__specialMenu-menu_cocktails,
+.app__specialMenu-menu_painter {
+    flex: 1;
+    width: 80%;
+    flex-direction: column;
+    margin-left: 100px; /* Moves the menu items a bit to the right */
+}
+
+.app__specialMenu-image_wine {
+    width: 100%;  /* Ensures the container takes the full width */
+    display: flex;
+    justify-content: flex-start;  /* Keeps the image aligned to the left */
+    margin-top: 80px;  /* Moves the image down */
+    margin-left: -500px;  /* Moves the image down */
+
+    padding-left: -100px;  /* Optional: Adds padding to move the image slightly left */
+    flex-direction: column;  /* Stacks the image and description vertically */
+}
+
+.app__specialMenu-image_wine img {
+    width: 100%;  /* Increases the size of the image, adjust as needed */
+    max-width: 800px;  /* Increases the maximum width of the image */
+    height: auto;  /* Maintains the aspect ratio */
+}
+
+.app__specialMenu-image_description {
+    font-family: var(--font-base);
+    font-size: 26px;
+    line-height: 24px;
+    color: var(--color-white);
+    margin-top: 20px;  /* Adds space between the image and description */
+    text-align: center;  /* Centers the description text */
+    max-width: 80%;  /* Optional: Limits the width to make the description more readable */
+    margin-left: auto;  /* Centers the description container */
+    margin-right: auto;
+}
